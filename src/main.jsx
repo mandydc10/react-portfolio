@@ -1,9 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./main.css";
 
 import HomePage from "./pages/HomePage.jsx";
-import ProjectPage from "./pages/ProjectPage.jsx";
+import ProjectsList from "./pages/ProjectsListPage.jsx";
+import ProjectPage from "./pages/ProjectDetailPage.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
 
 import NavBar from "./components/NavBar.jsx";
 
@@ -13,7 +16,9 @@ const router = createBrowserRouter([
     element: <NavBar />,
     children: [
       { path: "/", element: <HomePage /> },
-      { path: "/project", element: <ProjectPage /> },
+      { path: "/projects-list", element: <ProjectsList /> },
+      { path: "/project/:id", element: <ProjectPage /> },
+      { path: "/about-me", element: <AboutPage /> },
     ],
   },
 ]);

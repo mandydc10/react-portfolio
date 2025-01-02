@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    align-items: center;
+    padding-top: 15px;
+    box-shadow: 0px 1px 8px 1px RGB(128, 127, 121, 0.2);
+}
+
+.socials img {
+    height: 35px;
+    padding: 0 10px;
+}

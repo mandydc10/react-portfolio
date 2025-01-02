@@ -1,3 +1,42 @@
+.homepage-section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 40px auto;
+    color: var(--white);
+    font-size: 22px;
+    padding: 0 20px 60px;
+    background-color: RGBA(128, 127, 121, 0.1);
+    /* border: 1px solid var(--secondary_light); */
+    border-radius: 25px;
+    box-shadow: 0px 1px 8px 1px RGB(128, 127, 121, 0.3);
+}
+
+.homepage-section a {
+    justify-items: center;
+}
+
+.small-italics {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.truncate {
+    text-overflow: ellipsis;
+    margin-bottom: 12px;
+    cursor: pointer;
+    word-break: break-all;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 75%;
+}
+
+/* .truncate:hover {
+    overflow: visible;
+    white-space: normal;
+    height: auto;
+} */
+
 #project-list {
     display: grid;
     grid-template-columns: 30% 30% 30%;

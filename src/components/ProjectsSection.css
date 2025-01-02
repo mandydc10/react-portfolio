@@ -1,0 +1,8 @@
+.project-section {
+    display: flex;
+    /* flex-direction: column; */
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}

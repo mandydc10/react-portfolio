@@ -1,4 +1,4 @@
-import { oneProject } from "../data";
+import { oneProject } from "../projectData";
 
 function ProjectPage() {
     return (

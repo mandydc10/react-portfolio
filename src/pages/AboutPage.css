@@ -1,0 +1,9 @@
+.about-page {
+    text-align: center;
+    margin: 20px 40px 60px;
+    padding: 0 200px;
+    font-size: 22px;
+    line-height: 3rem;
+    color: var(--white);
+    background: radial-gradient(circle, hsla(338, 50%, 31%, 1) 0%, hsla(40, 4%, 15%, 1) 65%);
+}

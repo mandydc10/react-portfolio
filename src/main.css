@@ -1,0 +1,44 @@
+/* --------- global variables ------------ */
+:root {
+    --primary_dark: #752743;
+    --primary_bright: #B84A78;
+    --primary_light: #D9AAC5;
+    /* RGB 	217	170	197  */
+    --secondary_dark: #292826;
+    --secondary_light: #807F79;
+    /* RGB 128,127,121 */
+    --white: #ffffff;
+    --primary_font: "Quicksand", serif;
+}
+
+
+/* --------- style reset ------------ */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    font-family: var(--primary_font);
+}
+
+.btn {
+    background-color: var(--primary_bright);
+    margin: 15px;
+    padding: 20px 50px;
+    border-radius: 35px;
+    font-weight: 600;
+    color: var(--white);
+    text-transform: uppercase;
+    border: 1px solid var(--primary_dark);
+    box-shadow: 0px 1px 8px 2px RGB(217, 170, 197, 0.3);
+}
+
+a {
+    padding: 20px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:active {
+    color: var(--primary_light);
+}
