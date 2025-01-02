@@ -17,10 +17,16 @@ html,
 body {
     padding: 0;
     margin: 0;
-    width: 100vw;
+    /* width: 100vw; */
     font-family: var(--primary_font);
 }
 
+button {
+    background-color: transparent;
+    border: none;
+}
+
+/* --------- global styling ---------- */
 .btn {
     background-color: var(--primary_bright);
     margin: 15px;

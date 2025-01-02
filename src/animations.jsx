@@ -93,3 +93,30 @@ export const svgVariantsFade = {
         }
     }
 }
+
+export const svgVariantsMenuOpen = {
+    initial: { rotate: 0 },
+    animate: {
+        rotate: [0, 90],
+        transition: {
+            times: [0, 1],
+            duration: 0.7,
+            type: "keyframes",
+            ease: "easeInOut",
+        }
+    }
+}
+
+export const svgVariantsUnderscoreRotate = {
+    initial: { rotate: 0, y: 0 },
+    animate: {
+        rotate: [0, -45],
+        y: [0, -8],
+        transition: {
+            times: [0, 1],
+            duration: 0.7,
+            type: "keyframes",
+            ease: "easeInOut",
+        }
+    }
+}

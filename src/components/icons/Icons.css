@@ -1,3 +1,23 @@
+@keyframes hat-down {
+    from {
+        rotate: 0;
+    }
+
+    to {
+        rotate: 90;
+    }
+}
+
+.menu_icon {
+    stroke: var(--primary_bright);
+    margin-right: 10px;
+}
+
+/* #menu-hat:hover {
+    animation-name: hat-down;
+    animation-duration: 1s;
+} */
+
 .skills_icon {
     margin: 60px;
     scale: 3;
