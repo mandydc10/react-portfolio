@@ -2,22 +2,36 @@ body {
     background-color: var(--secondary_dark);
 }
 
-.background-image {
+.hero-section {
     display: flex;
-    height: 250px;
-    background-image: url("src/assets/images/brand_hero.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    flex-direction: column;
+    min-height: 200px;
+    width: 100%;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
-.background-image h1 {
-    margin-top: 0;
+.hero-section h1 {
     font-weight: 300;
     line-height: 2rem;
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(0deg, hsla(40, 4%, 15%, 1) 7%, hsla(45, 4%, 20%, 1) 90%);
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 28px;
 }
 
 .picture-1 {
     width: 100%;
+}
+
+/* ----------------- Responsive styling ----------------- */
+
+/* Small devices (small portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .hero-section h1 {
+        font-size: 42px;
+    }
 }

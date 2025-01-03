@@ -6,43 +6,57 @@
 
 .header {
     display: flex;
+    flex-direction: column;
     position: sticky;
     top: 0;
+    height: 90px;
     z-index: 1;
-    justify-content: space-between;
     align-items: center;
     background-color: var(--secondary_dark);
-    padding: 10px;
     box-shadow: 0px 1px 8px 1px RGB(128, 127, 121, 0.2) inset;
     /* border: 1px solid red; */
 }
 
-.logo {
+.logo-menu-items {
+    display: flex;
     position: absolute;
     top: 0;
-    left: 0;
-    margin: 5px 10px;
-    height: 80%;
-    /* border: 1px solid red; */
+    background-color: var(--secondary_dark);
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    width: 150px;
 }
 
 .horizontal-nav {
     display: none;
 }
 
-#dropdown {
+.dropdown-nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    height: 0;
+    width: 200px;
+    background-color: var(--secondary_dark);
+    /* border: 1px solid red; */
+}
+
+.dropdown-links-container {
     display: flex;
     flex-direction: column;
-    background-color: var(--secondary_dark);
-    height: 0;
-    padding: 0 20px;
 }
 
 .dropdown-links {
     color: white;
+    background-color: var(--secondary_dark);
+    width: 200px;
     animation: fadeInAnimation ease-in-out 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    /* border: 1px solid red; */
 }
 
 @keyframes fadeInAnimation {
@@ -56,8 +70,8 @@
 }
 
 .menu-icon {
-    display: block;
-    align-self: right;
+    padding: 5px 10px;
+    /* border: 1px solid red; */
 }
 
 
@@ -112,6 +126,7 @@
     /* For vertical tablets and small desktop: */
     .header {
         justify-content: center;
+        font-size: 22px;
     }
 
 }

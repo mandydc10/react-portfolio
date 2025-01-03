@@ -5,8 +5,8 @@ import heroImage from "../assets/images/brand_hero.png";
 function HeroSection() {
 
     return (
-        <div className="background-image">
-            {/* <img src={heroImage} className="picture-1" /> */}
+        <div className="hero-section">
+            <img src={heroImage} className="picture-1" />
             <h1>Software Developer</h1>
 
         </ div >

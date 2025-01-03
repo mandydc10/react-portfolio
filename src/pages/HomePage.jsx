@@ -12,9 +12,9 @@ import ProjectSection from "../components/ProjectsSection.jsx";
 
 function HomePage() {
     return (
-        <>
+        <div className="home-page">
             <HeroSection allImages={allImages} />
-            <div className="homepage-section" id="about-me-section">
+            <div id="about-me-section" className="homepage-sections" >
                 <a href="./about-me" >
                     <h1>{pagesText.title}</h1>
                     <p className="truncate"> {pagesText.body} </p>
@@ -23,7 +23,7 @@ function HomePage() {
             </div>
             <SkillsSection />
             <ProjectSection />
-        </>
+        </div>
     );
 }
 
