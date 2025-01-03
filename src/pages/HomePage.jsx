@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from 'react';
 
 import { allProjects } from "../projectData";
 import { pagesText } from "../projectData.js";
@@ -11,6 +12,10 @@ import SkillsSection from "../components/SkillsSection.jsx";
 import ProjectSection from "../components/ProjectsSection.jsx";
 
 function HomePage() {
+    useEffect(() => {
+        // Scroll to the top when the component mounts
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className="home-page">
             <HeroSection allImages={allImages} />
