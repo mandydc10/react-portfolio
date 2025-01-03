@@ -69,7 +69,7 @@ export const svgVariantsRoll = {
     initial: { x: 0 },
     animate: {
         rotate: [0, 360],
-        x: [0, 200],
+        x: [0, 50],
         transition: {
             times: [0, 1],
             duration: 5,

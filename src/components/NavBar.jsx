@@ -14,24 +14,28 @@ function NavBar({ children }) {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const menuAnimation = () => {
+
         {
-            !menuOpen ? animate("#menu-hat", { rotate: 90 }, { duration: 1 }) && animate("#menu_line", { rotate: -45, y: -8 }, { duration: 1 }) && setMenuOpen(true) : animate("#menu-hat", { rotate: 0 }, { duration: 1 }) && animate("#menu_line", { rotate: 0, y: 0 }, { duration: 1 }) && setMenuOpen(false)
+            setMenuOpen(!menuOpen);
+
+            !menuOpen ? animate("#menu-hat", { rotate: 90 }, { duration: 1 }) && animate("#menu_line", { rotate: -45, y: -8 }, { duration: 1 }) && animate("#dropdown", { height: 200 }, { duration: 1 }) : animate("#menu-hat", { rotate: 0 }, { duration: 1 }) && animate("#menu_line", { rotate: 0, y: 0 }, { duration: 1 }) && animate("#dropdown", { height: 0 }, { duration: 1 })
+
         }
     }
 
     return (
-        <div className="page">
+        <div className="page" ref={scope}>
             <div className="header">
                 <NavLink to="/">
                     <img src={longLogo} className="logo" />
                 </NavLink>
-                <nav className="nav-links">
+                <nav className="horizontal-nav">
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/about-me">About</NavLink>
                     <NavLink to="/projects-list">Projects</NavLink>
                 </nav>
                 <button className="menu-btn" onClick={menuAnimation}>
-                    <svg ref={scope}
+                    <svg
                         className="menu_icon"
                         fill="none" height="24" stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                         <motion.polyline id="menu-hat" points="4 17 10 11 4 5"
@@ -41,6 +45,14 @@ function NavBar({ children }) {
                     </svg>
                 </button>
             </div>
+            <div >
+                <motion.nav className="dropdown-nav" id="dropdown" >
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/about-me">About</NavLink>
+                    <NavLink to="/projects-list">Projects</NavLink>
+                </motion.nav>
+            </div>
+
             <Outlet />
             <Footer />
         </div>
