@@ -1,23 +1,18 @@
+/* ---------- Mobile first ---------- */
+
 .homepage-section {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 40px auto;
-    color: var(--white);
-    font-size: 22px;
-    padding: 0 20px 60px;
+    margin: 40px 20px;
+    padding: 0 20px 20px;
     background-color: RGBA(128, 127, 121, 0.1);
-    /* border: 1px solid var(--secondary_light); */
     border-radius: 25px;
     box-shadow: 0px 1px 8px 1px RGB(128, 127, 121, 0.3);
 }
 
 .homepage-section a {
-    justify-items: center;
+    /* justify-items: center; */
 }
 
 .small-italics {
-    font-size: 20px;
     font-style: italic;
 }
 
@@ -31,15 +26,44 @@
     width: 75%;
 }
 
-/* .truncate:hover {
+/* ----------------- Responsive styling ----------------- */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+@media only screen and (min-width: 768px) {
+    .homepage-section {
+        /* display: flex;
+        flex-direction: column; */
+        width: 80%;
+        /* margin: 40px auto; */
+        /* color: var(--white); */
+        font-size: 22px;
+        padding-bottom: 60px;
+
+    }
+
+    .small-italics {
+        font-size: 20px;
+    }
+
+    /* option to show full text on hover */
+    /* .truncate:hover {
     overflow: visible;
     white-space: normal;
     height: auto;
 } */
 
-#project-list {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    column-gap: 10px;
-    row-gap: 10px;
+    #project-list {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */

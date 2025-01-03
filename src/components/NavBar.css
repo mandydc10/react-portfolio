@@ -1,3 +1,5 @@
+/* ---------- Mobile first ---------- */
+
 /* * {
     border: 1px solid red;
 } */
@@ -28,15 +30,30 @@
     display: none;
 }
 
-.dropdown-nav {
+nav {
     display: flex;
     flex-direction: column;
     background-color: var(--secondary_dark);
     height: 0;
-    width: 50%;
-    /* transition: 2s; */
+    padding: 0 20px;
+}
 
-    /* border: 1px solid red; */
+.dropdown-links {
+    /* display: none; */
+    color: white;
+    animation: fadeInAnimation ease-in-out 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .menu-icon {

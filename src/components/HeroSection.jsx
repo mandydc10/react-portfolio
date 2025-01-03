@@ -6,7 +6,8 @@ function HeroSection() {
 
     return (
         <div className="background-image">
-            <img src={heroImage} className="picture-1" />
+            {/* <img src={heroImage} className="picture-1" /> */}
+            <h1>Software Developer</h1>
 
         </ div >
     );
