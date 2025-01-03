@@ -9,7 +9,7 @@ function ProjectsSection() {
     return (
         <div className="project-section">
             {allProjects.map((projectData, key) => {
-                return <ProjectCard key={key} projectData={projectData} />;
+                return <ProjectCard className="card" key={key} projectData={projectData} />;
             })
             }
         </div >

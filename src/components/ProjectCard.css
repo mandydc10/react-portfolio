@@ -1,9 +1,6 @@
 .project-cards {
-    flex: 1;
-    /* width: 500px; */
     border: 1px solid black;
     box-shadow: 0px 0px 5px gray;
-    /* margin: 20px 0; */
     padding: 20px;
 }
 
@@ -12,3 +9,4 @@
     height: 150px;
     object-fit: cover;
 }
+

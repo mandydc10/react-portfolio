@@ -14,7 +14,7 @@ function HomePage() {
     return (
         <>
             <HeroSection allImages={allImages} />
-            <div className="homepage-section">
+            <div className="homepage-section" id="about-me-section">
                 <a href="./about-me" >
                     <h1>{pagesText.title}</h1>
                     <p className="truncate"> {pagesText.body} </p>

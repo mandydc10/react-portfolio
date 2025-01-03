@@ -1,15 +1,11 @@
 /* ---------- Mobile first ---------- */
 
-.homepage-section {
+#about-me-section {
     margin: 40px 20px;
     padding: 0 20px 20px;
     background-color: RGBA(128, 127, 121, 0.1);
-    border-radius: 25px;
-    box-shadow: 0px 1px 8px 1px RGB(128, 127, 121, 0.3);
-}
-
-.homepage-section a {
-    /* justify-items: center; */
+    border-radius: 5%;
+    box-shadow: 0px 1px 2px 1px RGB(128, 127, 121, 0.3);
 }
 
 .small-italics {
@@ -23,7 +19,7 @@
     word-break: break-all;
     overflow: hidden;
     white-space: nowrap;
-    width: 75%;
+    width: 95%;
 }
 
 /* ----------------- Responsive styling ----------------- */
@@ -54,12 +50,12 @@
     height: auto;
 } */
 
-    #project-list {
+    /* #project-list {
         display: grid;
         grid-template-columns: 30% 30% 30%;
         column-gap: 10px;
         row-gap: 10px;
-    }
+    } */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

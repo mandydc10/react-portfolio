@@ -4,9 +4,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./main.css";
 
 import HomePage from "./pages/HomePage.jsx";
-import ProjectsList from "./pages/ProjectsListPage.jsx";
-import ProjectPage from "./pages/ProjectDetailPage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
+import ProjectsListPage from "./pages/ProjectsListPage.jsx";
+import ProjectDetailPage from "./pages/ProjectDetailPage.jsx";
 
 import NavBar from "./components/NavBar.jsx";
 
@@ -16,8 +16,8 @@ const router = createBrowserRouter([
     element: <NavBar />,
     children: [
       { path: "/", element: <HomePage /> },
-      { path: "/projects-list", element: <ProjectsList /> },
-      { path: "/project/:id", element: <ProjectPage /> },
+      { path: "/projects-list", element: <ProjectsListPage /> },
+      { path: "/project/:id", element: <ProjectDetailPage /> },
       { path: "/about-me", element: <AboutPage /> },
     ],
   },

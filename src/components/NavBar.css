@@ -30,7 +30,7 @@
     display: none;
 }
 
-nav {
+#dropdown {
     display: flex;
     flex-direction: column;
     background-color: var(--secondary_dark);
@@ -39,7 +39,6 @@ nav {
 }
 
 .dropdown-links {
-    /* display: none; */
     color: white;
     animation: fadeInAnimation ease-in-out 3s;
     animation-iteration-count: 1;
@@ -64,26 +63,55 @@ nav {
 
 /* ----------------- Responsive styling ----------------- */
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
-
-@media only screen and (min-width: 768px) {
-    /* For horizontal tablets and desktop: */
+/* Small devices (small portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
 
     .header {
         color: var(--secondary_light);
         font-family: var(--primary_font);
         font-weight: 400;
         font-size: 18px;
-        justify-content: center;
+        justify-content: space-between;
+
     }
 
     .horizontal-nav {
         display: flex;
     }
 
+    .horizontal-nav>* {
+        /* border-radius: 50px; */
+        text-align: center;
+        width: 120px;
+        height: auto;
+        padding: 0 5px;
+        margin: 0;
+    }
+
+    .horizontal-nav>*:focus {
+        color: var(--primary_light);
+        /* border-bottom: 1px solid var(--primary_light); */
+    }
+
+    .horizontal-nav>*:hover {
+        color: var(--primary_light);
+    }
+
+    .dropdown-nav {
+        display: none;
+    }
+
     .menu-btn {
         display: none;
+    }
+
+}
+
+@media only screen and (min-width: 830px) {
+
+    /* For vertical tablets and small desktop: */
+    .header {
+        justify-content: center;
     }
 
 }

@@ -21,10 +21,10 @@ function NavBar({ children }) {
             !menuOpen
                 ? animate("#menu-hat", { rotate: 90 }, { duration: 1 }) &&
                 animate("#menu_line", { rotate: -45, y: -8 }, { duration: 1 }) &&
-                animate("#dropdown", { height: 200 }, { duration: 1 })
+                animate(".dropdown-nav", { height: 200 }, { duration: 1 })
                 : animate("#menu-hat", { rotate: 0 }, { duration: 1 }) &&
                 animate("#menu_line", { rotate: 0, y: 0 }, { duration: 1 }) &&
-                animate("#dropdown", { height: 0 }, { duration: 0.5 })
+                animate(".dropdown-nav", { height: 0 }, { duration: 0.5 })
 
         }
     }
@@ -51,9 +51,9 @@ function NavBar({ children }) {
                     </svg>
                 </button>
             </div>
-            <motion.div className="dropdown-nav" id="dropdown">
+            <motion.div className="dropdown-nav" >
                 {menuOpen &&
-                    <nav>
+                    <nav id="dropdown">
                         <NavLink className="dropdown-links" to="/">Home</NavLink>
                         <NavLink className="dropdown-links" to="/about-me">About</NavLink>
                         <NavLink className="dropdown-links" to="/projects-list">Projects</NavLink>

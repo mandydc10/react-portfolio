@@ -12,20 +12,17 @@ import CssIcon from "./icons/IconCssSvg3.jsx";
 
 function SkillsSection() {
     return (
-        <div className="skills-section">
-            <div>
-                <CssIcon />
-                <HtmlIcon />
-                <JSIcon />
-
+        <>
+            <div className="skills-section">
+                <CssIcon className="skills-icons" />
+                <HtmlIcon className="skills-icons" />
+                <JSIcon className="skills-icons" />
+                <PythonIcon className="skills-icons" />
+                <DjangoIcon className="skills-icons" />
+                <ReactIcon className="skills-icons" />
+                <CSharpIcon className="skills-icons" />
             </div>
-            <div>
-                <PythonIcon />
-                <DjangoIcon />
-                <ReactIcon />
-                <CSharpIcon />
-            </div>
-        </div >
+        </>
     );
 }
 
