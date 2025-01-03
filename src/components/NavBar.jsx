@@ -34,8 +34,8 @@ function NavBar({ children }) {
         <div className="page" ref={scope}>
             <div className="header">
                 <div className="logo-menu-items">
-                    <NavLink to="/">
-                        <img src={longLogo} className="logo" />
+                    <NavLink to="/" className="logo">
+                        <img src={longLogo} />
                     </NavLink>
                     <nav className="horizontal-nav">
                         <NavLink to="/">Home</NavLink>
@@ -66,7 +66,7 @@ function NavBar({ children }) {
 
             <Outlet />
             <Footer />
-        </div>
+        </div >
     );
 }
 
