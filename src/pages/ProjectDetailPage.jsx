@@ -1,27 +1,42 @@
 import { useEffect } from 'react';
-import { oneProject } from "../projectData";
+// import { oneProject } from "../projectData";
+import { allProjects } from "../projectData";
+import { useParams } from 'react-router-dom';
+import "../pages/ProjectDetailPage.css";
 
 function ProjectPage() {
+    const params = useParams();
+    let projectDetail = {}
+
+    allProjects.map((project) => {
+        if (project.id == params.id) {
+            projectDetail = project;
+        }
+    }
+    );
+
     useEffect(() => {
         // Scroll to the top when the component mounts
         window.scrollTo(0, 0);
     }, []);
 
     return (
-        <div>
-            <h2>{oneProject.title}</h2>
-            <h3>Created at: {oneProject.date_created}</h3>
-            <h3>{`Status: ${oneProject.is_open}`}</h3>
-            <h3>Pledges:</h3>
+        <div className="project">
+            <h2>{projectDetail.title}</h2>
+            <h3>Date created: {projectDetail.date_created}</h3>
+            <a href={projectDetail.href}>See it live!</a>
+            <p>{`Description: ${projectDetail.description}`}</p>
+            <h3>Skills:</h3>
             <ul>
-                {oneProject.pledges.map((pledgeData, key) => {
+                {projectDetail.skills.map((skill, key) => {
                     return (
                         <li key={key}>
-                            {pledgeData.amount} from {pledgeData.supporter}
+                            {skill}
                         </li>
                     );
                 })}
             </ul>
+            <img src={projectDetail.image} alt={projectDetail.image_alt} />
         </div>
     );
 }

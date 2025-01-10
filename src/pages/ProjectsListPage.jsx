@@ -14,7 +14,7 @@ function ProjectListPage() {
 
     return (
         <div className="project-section">
-            <GameWidget />
+            <GameWidget className="projects-card" />
 
             {allProjects.map((projectData, key) => {
                 return <ProjectCard key={key} projectData={projectData} />;
