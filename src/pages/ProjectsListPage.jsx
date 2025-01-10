@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { allProjects } from "../projectData";
 
 import ProjectCard from "../components/ProjectCard";
-import GameWidget from "../components/GameWidget";
+// import GameWidget from "../components/GameWidget";
 
 import "../pages/ProjectsListPage.css";
 

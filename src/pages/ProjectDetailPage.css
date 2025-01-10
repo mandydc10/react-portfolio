@@ -1,15 +1,29 @@
 .project {
     margin: 20px;
     padding: 20px;
-    /* background-color: white; */
 }
 
 .project-header {
     display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .project-date {
     font-style: italic;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0;
+}
+
+.project-skills {
+    width: 50px;
+    margin: 10px;
 }
 
 .project-link {
@@ -17,12 +31,20 @@
     font-style: italic;
 }
 
-.project img {
-    width: 20%;
-    /* float: left; */
-    margin-right: 20px;
-    /* fit: cover; */
+.project-image {
+    max-width: 50%;
 }
 
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .project-skills {
+        width: 80px;
+        margin: 20px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        margin: 0;
+    }
+}

@@ -34,21 +34,22 @@ function ProjectPage() {
     return (
         <div className="project">
             <div className="project-header">
-                <img src={projectDetail.image} alt={projectDetail.image_alt} />
                 <h2>{projectDetail.title}</h2>
+                <p className="project-date">Date created: {projectDetail.date_created}</p>
+
+                <ul>
+                    {projectDetail.skills.map((skill, key) => {
+                        return (
+                            <img key={key} className="project-skills" src={skill_list[skill]} />
+                        );
+                    })}
+                </ul>
             </div>
             <h3>Description:</h3>
             <p>{projectDetail.description}</p>
-            <a href={projectDetail.href} className="project-link">Click here to see it live!</a>
-            <h3>Skills:</h3>
-            <ul>
-                {projectDetail.skills.map((skill, key) => {
-                    return (
-                        <img key={key} className="card-skills" src={skill_list[skill]} />
-                    );
-                })}
-            </ul>
-            <p className="project-date">Date created: {projectDetail.date_created}</p>
+            <a href={projectDetail.href} >
+                <img src={projectDetail.image} alt={projectDetail.image_alt} className="project-image" />
+                <p className=".project-link">Click here to see it live!</p></a>
         </div>
     );
 }
