@@ -1,4 +1,28 @@
+.project {
+    margin: 20px;
+    padding: 20px;
+    /* background-color: white; */
+}
+
+.project-header {
+    display: flex;
+}
+
+.project-date {
+    font-style: italic;
+}
+
+.project-link {
+    color: var(--primary_light);
+    font-style: italic;
+}
+
 .project img {
-    width: 100%;
+    width: 20%;
+    /* float: left; */
+    margin-right: 20px;
     /* fit: cover; */
 }
+
+
+@media only screen and (min-width: 768px) {}

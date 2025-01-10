@@ -2,14 +2,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background: radial-gradient(circle, hsla(338, 50%, 31%, 1) 0%, hsla(40, 4%, 15%, 1) 65%);
 }
 
-.projects-card {
-    flex: 2 1 50px;
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2 1 400px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 0px 5px gray;
+    margin: 30px 50px;
+    padding: 20px;
+    width: 30%;
+    max-height: 500px;
+    background-color: rgb(41, 40, 38, 0.4);
 }
 
-
-.game-card {
-    scale: 0.6;
-    float: right;
+@media only screen and (min-width: 768px) {
+    .card {
+        margin: 40px 80px;
+    }
 }

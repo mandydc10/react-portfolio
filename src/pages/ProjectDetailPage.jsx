@@ -8,6 +8,17 @@ function ProjectPage() {
     const params = useParams();
     let projectDetail = {}
 
+    const skill_list = {
+        css: "/assets/images/icon_css.svg",
+        html: "/assets/images/icon_html.svg",
+        javascript: "/assets/images/icon_javascript.svg",
+        python: "/assets/images/icon_python.svg",
+        react: "/assets/images/icon_react.svg",
+        django: "/assets/images/icon_django.svg",
+        csharp: "/assets/images/icon_csharp.svg",
+        unity: "/assets/images/icon_unity.svg"
+    };
+
     allProjects.map((project) => {
         if (project.id == params.id) {
             projectDetail = project;
@@ -22,21 +33,22 @@ function ProjectPage() {
 
     return (
         <div className="project">
-            <h2>{projectDetail.title}</h2>
-            <h3>Date created: {projectDetail.date_created}</h3>
-            <a href={projectDetail.href}>See it live!</a>
-            <p>{`Description: ${projectDetail.description}`}</p>
+            <div className="project-header">
+                <img src={projectDetail.image} alt={projectDetail.image_alt} />
+                <h2>{projectDetail.title}</h2>
+            </div>
+            <h3>Description:</h3>
+            <p>{projectDetail.description}</p>
+            <a href={projectDetail.href} className="project-link">Click here to see it live!</a>
             <h3>Skills:</h3>
             <ul>
                 {projectDetail.skills.map((skill, key) => {
                     return (
-                        <li key={key}>
-                            {skill}
-                        </li>
+                        <img key={key} className="card-skills" src={skill_list[skill]} />
                     );
                 })}
             </ul>
-            <img src={projectDetail.image} alt={projectDetail.image_alt} />
+            <p className="project-date">Date created: {projectDetail.date_created}</p>
         </div>
     );
 }

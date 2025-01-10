@@ -2,7 +2,6 @@ import { allProjects } from "../projectData";
 import ProjectCard from "../components/ProjectCard";
 
 import "./ProjectsSection.css";
-// not in use yet
 
 function ProjectsSection() {
 
