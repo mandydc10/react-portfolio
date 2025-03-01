@@ -5,6 +5,7 @@ function ContactForm() {
         <>
             <form action="https://formsubmit.co/9cbd80d6cabd97a9392bf66804ed2353" method="POST">
                 {/* honeypot -> <input type="text" name="_honey" style="display: none;"> Disable Captcha -> <input type="hidden" name="_captcha" value="false"> */}
+                <input type="hidden" name="_next" value="https://mandydcook.com/success-message" />
                 <label htmlFor="firstName">First Name</label>
                 <input type="text" name="name" id="firstName" placeholder="First name" required />
                 <label htmlFor="lastName">Last Name</label>
