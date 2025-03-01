@@ -22,7 +22,7 @@ function NavBar({ children }) {
                 ? animate("#menu-hat", { rotate: 90 }, { duration: 1 }) &&
                 animate("#menu_line", { rotate: -45, y: -8 }, { duration: 1 })
                 &&
-                animate(".dropdown-nav", { height: 200 }, { duration: 1 })
+                animate(".dropdown-nav", { height: 260 }, { duration: 1 })
                 : animate("#menu-hat", { rotate: 0 }, { duration: 1 }) &&
                 animate("#menu_line", { rotate: 0, y: 0 }, { duration: 1 })
                 && animate(".dropdown-nav", { height: 0 }, { duration: 0.5 })
@@ -33,32 +33,41 @@ function NavBar({ children }) {
     return (
         <div className="page" ref={scope}>
             <div className="header">
-                <div className="logo-menu-items">
+
+                {/* <div > */}
+                <nav className="logo-menu-items">
                     <NavLink to="/" className="logo">
                         <img src={longLogo} />
                     </NavLink>
-                    <nav className="horizontal-nav">
+
+                    <div className="horizontal-nav horizontal-nav-links">
                         <NavLink to="/">Home</NavLink>
                         <NavLink to="/about-me">About</NavLink>
                         <NavLink to="/projects-list">Projects</NavLink>
-                    </nav>
-                    <button className="menu-btn" onClick={menuAnimation}>
-                        <svg
-                            className="menu_icon"
-                            fill="none" height="24" stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <motion.polyline id="menu-hat" points="4 17 10 11 4 5"
-                            />
-                            <motion.line id="menu_line" x1="12" x2="20" y1="19" y2="19"
-                            />
-                        </svg>
-                    </button>
-                </div>
+                    </div>
+                    <NavLink to="/contact-me" className="horizontal-nav btn nav-btn">
+                        Connect with me!
+                    </NavLink>
+                </nav>
+
+                <button className="menu-btn" onClick={menuAnimation}>
+                    <svg
+                        className="menu_icon"
+                        fill="none" height="24" stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <motion.polyline id="menu-hat" points="4 17 10 11 4 5"
+                        />
+                        <motion.line id="menu_line" x1="12" x2="20" y1="19" y2="19"
+                        />
+                    </svg>
+                </button>
+                {/* </div> */}
                 <motion.div className="dropdown-nav" >
                     {menuOpen &&
                         <nav className="dropdown-links-container">
                             <NavLink className="dropdown-links" to="/" onClick="() => !menuOpen">Home</NavLink>
                             <NavLink className="dropdown-links" to="/about-me" onClick="() => !menuOpen">About</NavLink>
                             <NavLink className="dropdown-links" to="/projects-list" onClick="() => !menuOpen">Projects</NavLink>
+                            <NavLink className="dropdown-links" to="/contact-me" onClick="() => !menuOpen">Contact me</NavLink>
                         </nav>
                     }
                 </motion.div>

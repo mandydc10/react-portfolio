@@ -1,0 +1,65 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px 40px;
+    font-size: 16px;
+    width: 80%;
+}
+
+form .btn {
+    padding: 10px;
+    margin: 40px 0 20px;
+    max-width: 100%;
+    width: 200px;
+    font-size: 16px;
+    align-self: center;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 1.5;
+    font-family: var(--primary_font);
+    font-style: italic;
+}
+
+label {
+    margin: 10px 0 5px;
+    padding-left: 3px;
+    line-height: 1;
+}
+
+/* Small devices (small portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    form {
+        font-size: 18px;
+        width: 50%;
+    }
+
+    form .btn {
+        padding: 20px;
+        margin: 50px 20px;
+        width: 250px;
+        font-size: 18px;
+    }
+
+    input,
+    textarea {
+        font-size: 18px;
+    }
+
+    label {
+        margin: 25px 0 5px;
+    }
+}
+
+@media only screen and (min-width: 830px) {
+
+    /* For vertical tablets and small desktop: */
+    /* form .btn {
+        align-self: last baseline;
+        margin: 50px 0;
+    } */
+}

@@ -10,6 +10,7 @@
     /* RGB 128,127,121 */
     --white: #ffffff;
     --primary_font: "Quicksand", serif;
+
 }
 
 
@@ -22,6 +23,18 @@ body {
     font-size: 16px;
     line-height: 1.5rem;
     color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+#page {
+    min-height: 100vh;
 }
 
 h1 {
