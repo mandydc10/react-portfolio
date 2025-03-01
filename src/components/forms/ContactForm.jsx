@@ -3,7 +3,7 @@ import "./ContactForm.css";
 function ContactForm() {
     return (
         <>
-            <form action="https://formsubmit.co/mandy.dc@gmail.com" method="POST">
+            <form action="https://formsubmit.co/9cbd80d6cabd97a9392bf66804ed2353" method="POST">
                 <label htmlFor="firstName">First Name</label>
                 <input type="text" name="name" id="firstName" placeholder="First name" required />
                 <label htmlFor="lastName">Last Name</label>
