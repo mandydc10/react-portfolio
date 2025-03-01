@@ -22,6 +22,10 @@ textarea {
     border-radius: 10px;
     line-height: 1.5;
     font-family: var(--primary_font);
+}
+
+input::placeholder,
+textarea::placeholder {
     font-style: italic;
 }
 
@@ -29,6 +33,10 @@ label {
     margin: 10px 0 5px;
     padding-left: 3px;
     line-height: 1;
+}
+
+._honey {
+    display: none;
 }
 
 /* Small devices (small portrait tablets and large phones, 600px and up) */

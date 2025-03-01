@@ -4,8 +4,13 @@ function ContactForm() {
     return (
         <>
             <form action="https://formsubmit.co/9cbd80d6cabd97a9392bf66804ed2353" method="POST">
-                {/* honeypot -> <input type="text" name="_honey" style="display: none;"> Disable Captcha -> <input type="hidden" name="_captcha" value="false"> */}
+                {/* Honeypot for spammers */}
+                <input type="text" name="_honey" className="_honey" />
+                {/* Remove captcha as honeypot above should prevent this */}
+                <input type="hidden" name="_captcha" value="false" />
+                {/* Setting up re-direct to custom success page */}
                 <input type="hidden" name="_next" value="https://mandydcook.com/success-message" />
+
                 <label htmlFor="firstName">First Name</label>
                 <input type="text" name="name" id="firstName" placeholder="First name" required />
                 <label htmlFor="lastName">Last Name</label>
