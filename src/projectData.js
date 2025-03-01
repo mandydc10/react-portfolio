@@ -102,7 +102,7 @@ export const pagesText = {
 
     What drives me most is the opportunity to solve meaningful challenges through technology while continuously learning and growing.I’m a strong believer in fostering collaboration and maintaining a respectful, inclusive environment, whether working in a team or engaging with users.
 
-    When I’m not coding, you might find me mentoring others in the developer community, exploring creative hobbies, or brainstorming ways to make life easier through automation.My portfolio is a reflection of my journey so far and the skills I’m excited to keep building upon.
+    When I’m not coding, you might find me mentoring others in the developer community, exploring creative hobbies like dressmaking, leather crafting, training handstands or gymnastic rings, brushing up on the latest health and nutrition research, checking out my local dog shelter, or brainstorming ways to try and improve life for others through technology. My portfolio is a reflection of my journey so far and the skills I’m excited to keep building upon.
 
     Feel free to explore my projects, and don’t hesitate to reach out—I’d love to connect!`,
 }
