@@ -54,9 +54,16 @@ button {
     border-radius: 35px;
     font-weight: 600;
     color: var(--white);
-    text-transform: uppercase;
+    text-transform: lowercase;
     border: 1px solid var(--primary_dark);
     box-shadow: 0px 1px 8px 2px RGB(217, 170, 197, 0.3);
+}
+
+.btn:active,
+a:active {
+    /* margin-bottom: 5px; */
+    transform: translateY(5px);
+    color: var(--primary_light);
 }
 
 a {
@@ -65,9 +72,9 @@ a {
     color: var(--white);
 }
 
-a:active {
+/* a:active {
     color: var(--primary_light);
-}
+} */
 
 /* ---------- Mobile first ---------- */
 

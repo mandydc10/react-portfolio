@@ -46,7 +46,7 @@ function NavBar({ children }) {
                         <NavLink to="/projects-list">Projects</NavLink>
                     </div>
                     <NavLink to="/contact-me" className="horizontal-nav btn nav-btn">
-                        Connect with me!
+                        Contact me
                     </NavLink>
                 </nav>
 
