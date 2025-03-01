@@ -12,7 +12,7 @@ function AboutPage() {
     return (
         <div className="about-page">
             <AboutSection />
-            <a className="btn">Connect with me!</a>
+            <a className="btn" href="./contact-me">Connect with me!</a>
         </div>
     );
 }

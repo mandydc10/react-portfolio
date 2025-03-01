@@ -9,7 +9,6 @@
     flex-direction: column;
     position: sticky;
     top: 0px;
-    height: 90px;
     z-index: 1;
     justify-content: space-between;
     background-color: var(--secondary_dark);
@@ -19,22 +18,24 @@
 
 .logo-menu-items {
     display: flex;
-    position: absolute;
-    top: 20px;
+    box-sizing: border-box;
+    padding: 20px;
     background-color: var(--secondary_dark);
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
-.logo {
-    padding-left: 20px;
-
-}
-
 .logo img {
     width: 150px;
     vertical-align: bottom;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+
 }
 
 .horizontal-nav {
@@ -48,7 +49,6 @@
     height: 0;
     width: 200px;
     background-color: var(--secondary_dark);
-    /* border: 1px solid red; */
 }
 
 .dropdown-links-container {
@@ -63,7 +63,6 @@
     animation: fadeInAnimation ease-in-out 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    /* border: 1px solid red; */
 }
 
 @keyframes fadeInAnimation {
@@ -78,7 +77,6 @@
 
 .menu-icon {
     padding: 5px 10px;
-    /* border: 1px solid red; */
 }
 
 
@@ -94,36 +92,31 @@
         font-size: 18px;
     }
 
-    .logo-menu-items {
-        justify-content: right;
-    }
-
-    .logo {
-        position: absolute;
-        left: 20px;
-        padding: 0;
-    }
-
     .horizontal-nav {
         display: flex;
+        align-items: center;
     }
 
-    .horizontal-nav>* {
-        /* border-radius: 50px; */
+    .horizontal-nav-links>* {
         text-align: center;
-        width: 120px;
         height: auto;
-        padding: 0 5px;
+        padding: 0 15px;
         margin: 0;
     }
 
-    .horizontal-nav>*:focus {
+    .horizontal-nav-links>*:focus {
         color: var(--primary_light);
-        /* border-bottom: 1px solid var(--primary_light); */
     }
 
-    .horizontal-nav>*:hover {
+    .horizontal-nav-links>*:hover {
         color: var(--primary_light);
+    }
+
+    .nav-btn {
+        font-size: 16px;
+        padding: 10px 15px;
+        line-height: 1;
+        text-align: center;
     }
 
     .dropdown-nav {
@@ -140,7 +133,6 @@
 
     /* For vertical tablets and small desktop: */
     .logo-menu-items {
-        justify-content: center;
         font-size: 22px;
     }
 

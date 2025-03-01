@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import ProjectsListPage from "./pages/ProjectsListPage.jsx";
 import ProjectDetailPage from "./pages/ProjectDetailPage.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
 
 import NavBar from "./components/NavBar.jsx";
 
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: "/projects-list", element: <ProjectsListPage /> },
       { path: "/project/:id", element: <ProjectDetailPage /> },
       { path: "/about-me", element: <AboutPage /> },
+      { path: "/contact-me", element: <ContactPage /> },
     ],
   },
 ]);
